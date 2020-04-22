@@ -22,9 +22,10 @@ export class AppComponent  {
     this.router.navigate(['/pagelist']);
   }
 
-  savearr(nm,p)
+  savearr(a,b)
   {
-    
+    this.nmjurusan.push(a);
+    this.pnjlsan.push(b);
 
   }
 }

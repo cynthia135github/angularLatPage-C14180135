@@ -9,14 +9,13 @@ import { ActivatedRoute } from '@angular/router';
 export class PageinputComponent implements OnInit {
 
  constructor(private route : ActivatedRoute) { }
-  nm = "";
-  penjelasan = "";
+  
   ngOnInit() {
   }
 
-  Simpan(a,b){
-    this.nm = a;
-    this.penjelasan = b;
-  }
+  //Simpan(a,b){
+  //  this.nm = a;
+  //  this.penjelasan = b;
+  //}
 
 }
