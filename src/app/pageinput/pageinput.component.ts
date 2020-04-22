@@ -10,6 +10,9 @@ export class PageinputComponent implements OnInit {
 
  constructor(private route : ActivatedRoute) { }
   
+  
+
+
   ngOnInit() {
   }
 

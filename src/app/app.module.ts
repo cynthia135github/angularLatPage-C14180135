@@ -26,4 +26,9 @@ const ROUTES:Routes = [
   declarations: [ AppComponent, HelloComponent, PageinputComponent, PagelistComponent, PageeditComponent ],
   bootstrap:    [ AppComponent ]
 })
-export class AppModule { }
+export class AppModule {
+
+  providers: [
+  PageinputComponent
+  ]
+ }
