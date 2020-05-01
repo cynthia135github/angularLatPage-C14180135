@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { GlobSerService } from '../glob-ser.service';
 
 @Component({
   selector: 'app-pageinput',
@@ -8,7 +9,12 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class PageinputComponent implements OnInit {
 
- constructor(private route : ActivatedRoute) { }
+ a = "";
+ b = "";
+ data: String;
+ constructor(private route : ActivatedRoute, public varglob:GlobSerService) {
+    this.varglob.simpan(this.a,this.b);
+  }
   
   
 
@@ -16,9 +22,5 @@ export class PageinputComponent implements OnInit {
   ngOnInit() {
   }
 
-  //Simpan(a,b){
-  //  this.nm = a;
-  //  this.penjelasan = b;
-  //}
 
 }

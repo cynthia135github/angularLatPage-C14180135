@@ -6,9 +6,9 @@ import { Router } from '@angular/router';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'This is Main Page';
-  nmjurusan = [];
-  pnjlsan = [];
+  name = '!';
+ 
+  
   constructor(private router : Router) {}
   Edit() {
     this.router.navigate(['/pageedit']);
@@ -22,10 +22,4 @@ export class AppComponent  {
     this.router.navigate(['/pagelist']);
   }
 
-  savearr(a,b)
-  {
-    this.nmjurusan.push(a);
-    this.pnjlsan.push(b);
-
-  }
 }
