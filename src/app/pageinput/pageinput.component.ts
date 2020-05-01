@@ -22,11 +22,16 @@ export class PageinputComponent implements OnInit {
   }
   
   
-  simpan(a,b)
+  /*simpan(a,b)
   {
      this.datanama.push(a);
      this.datap.push(b);
      this.j += 1;
+  }*/
+
+  simpan(a,b)
+  {
+     this.varglob.saving(a,b);
   }
 
   ngOnInit() {

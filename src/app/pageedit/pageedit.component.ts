@@ -22,12 +22,22 @@ export class PageeditComponent implements OnInit {
 
   }
 
-  editing(){
+ /* editing(txtnama,txtpenjelasan){
     for(var i=0; i<this.jumlah;i++)
     {
        if(this.dnama[i] == this.txtnama)
        {
-         this.dpenjelasan[i] = this.varglob.setPnjlsnJurusan(this.txtpenjelasan);
+         this.dpenjelasan[i].setPnjlsnJurusan(this.txtpenjelasan,i);
+       }
+    }
+  }*/
+
+  editing(txtnama,txtpenjelasan){
+    for(var i=0; i<this.jumlah;i++)
+    {
+       if(this.dnama[i] == this.txtnama)
+       {
+        this.varglob.editpenjelasan(txtpenjelasan,i);
        }
     }
   }

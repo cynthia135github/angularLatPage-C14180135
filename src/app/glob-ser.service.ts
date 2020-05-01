@@ -23,15 +23,26 @@ export class GlobSerService {
     return this.jmlh;
   }
 
+  public saving(a,b)
+  {
+    this.nmjurusan.push(a);
+    this.pnjlsan.push(b);
+    this.jmlh = this.jmlh + 1;
+  }
+
+  public editpenjelasan(txtpenjelasan,indek)
+  {
+    this.pnjlsan[indek] = txtpenjelasan;
+  }
 
   public setNamaJurusan(namabaru)
   {
       this.nmjurusan = namabaru;
   }
 
-   public setPnjlsnJurusan(pnjlsnbaru)
+   public setPnjlsnJurusan(pnjlsnbaru,indek)
   {
-      this.pnjlsan = pnjlsnbaru;
+      this.pnjlsan[indek] = pnjlsnbaru;
   }
 
   /**public simpanNama(namajrs){
