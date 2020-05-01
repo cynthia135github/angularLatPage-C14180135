@@ -34,12 +34,7 @@ export class GlobSerService {
       this.pnjlsan = pnjlsnbaru;
   }
 
-  simpan(a,b)
-  {
-     this.nmjurusan.push(a);
-     this.pnjlsan.push(b);
-     this.jmlh += 1;
-  }
+  
  
 
   constructor() { }
