@@ -34,7 +34,9 @@ export class GlobSerService {
       this.pnjlsan = pnjlsnbaru;
   }
 
-  
+  /**public simpanNama(namajrs){
+
+  }*/
  
 
   constructor() { }
